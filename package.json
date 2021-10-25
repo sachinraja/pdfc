@@ -41,7 +41,8 @@
     "lint": "run-p lint:*",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests",
     "prepare": "husky install",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "cli": "tsm src/bin.ts"
   },
   "dependencies": {
     "clipanion": "^3.2.0-rc.3",
@@ -67,6 +68,7 @@
     "prettier": "2.4.1",
     "rimraf": "3.0.2",
     "semantic-release": "18.0.0",
+    "tsm": "2.1.2",
     "tsup": "5.4.4",
     "typescript": "4.4.4",
     "xo": "0.45.0"

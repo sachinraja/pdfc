@@ -22,6 +22,7 @@ specifiers:
   semantic-release: 18.0.0
   shiki: ^0.9.12
   shiki-renderer-pdf: ^1.1.2
+  tsm: 2.1.2
   tsup: 5.4.4
   typescript: 4.4.4
   xo: 0.45.0
@@ -50,6 +51,7 @@ devDependencies:
   prettier: 2.4.1
   rimraf: 3.0.2
   semantic-release: 18.0.0
+  tsm: 2.1.2
   tsup: 5.4.4_typescript@4.4.4
   typescript: 4.4.4
   xo: 0.45.0
@@ -6200,6 +6202,14 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+
+  /tsm/2.1.2:
+    resolution: {integrity: sha512-1jF8LNTRcPsw15ajZK2ra3RA2PSCdVGvJzF/Q1TCsu1tH2dY59HgNWxhttN2s1mfJUFoattjf9QZ410u5bgtJQ==}
+    engines: {node: '>=12'}
+    hasBin: true
+    dependencies:
+      esbuild: 0.13.4
+    dev: true
 
   /tsup/5.4.4_typescript@4.4.4:
     resolution: {integrity: sha512-mrzBGNqmuhk6BSUe/uowB+qk8lJ8R/2IZTMeub5oVTCqu3gs2YON7veOvfQt5nYpPUGGDXZdMvaygha2c1srOw==}
