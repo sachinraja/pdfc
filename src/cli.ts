@@ -1,7 +1,7 @@
 import { Command, Option, Cli, Builtins, CliOptions } from 'clipanion'
 import { Theme } from 'shiki'
 import { bgGreen, black } from 'colorette'
-import { compilePdfs } from './index'
+import { compilePdfs } from '.'
 
 const defineUsage = Command.Usage
 
