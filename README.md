@@ -18,7 +18,7 @@ Most uses are through the cli, but there is a programatic api.
 
 ## Cli
 
-To compile all files in a directory to pdfs you can use this:
+To compile all files in a directory to PDFs you can use this:
 
 ```shell
 pdfc src
@@ -58,7 +58,9 @@ Run `pdfc --help` for more on what you can do.
 
 ## API
 
-Compile pdfs, this will also write files to `pdfs` by default:
+Please note that this package is pure ESM, see [this](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) for more details.
+
+Compile PDFs, this will also write files to `pdfs` by default:
 
 ```js
 import { compilePdfs } from '../src'
