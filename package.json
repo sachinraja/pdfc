@@ -55,7 +55,7 @@
     "shiki-renderer-pdf": "^1.1.2"
   },
   "devDependencies": {
-    "@swc/core": "1.2.103",
+    "@swc/core": "1.2.104",
     "@swc/helpers": "0.2.13",
     "@swc/jest": "0.2.5",
     "@types/jest": "27.0.2",
