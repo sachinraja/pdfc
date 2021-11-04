@@ -13,9 +13,12 @@ export class RootCommand extends Command {
     examples: [
       [
         'Compile all files in src (will write to the pdfs directory by default)',
-        '$0 src pdfs',
+        '$0 src',
       ],
-      ['Compile all files in src to the dist directory', '$0 src -d dist'],
+      [
+        'Compile all files in src to the pdf-build directory',
+        '$0 src -d pdf-build',
+      ],
       ['Compile only javascript files', '$0 src --include "src/**/*.js"'],
       ['Exclude tests from compilation', '$0 src --exclude "src/**/*.test.js"'],
       ['Specify a theme', '$0 src -t github-light'],
