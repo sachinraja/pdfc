@@ -5,7 +5,7 @@ import { PDFDocument } from 'pdf-lib'
 import { getHighlighter, Lang, Theme } from 'shiki'
 import { getPdfRenderer } from 'shiki-renderer-pdf'
 import { globby } from 'globby'
-import filename2prism from 'filename2prism'
+import * as filename2shiki from 'filename2shiki'
 import isPathInside from 'is-path-inside'
 
 export type StringToPdfOptions = {
@@ -73,6 +73,8 @@ export const compilePdfs = async (options: CompileOptions) => {
     ignore: normalizedOptions.exclude,
   })
 
+  const sortedLanguages = filename2shiki.getSortedLanguages()
+
   await Promise.all(
     filepaths.map(async (filepath) => {
       if (!isPathInside(filepath, normalizedOptions.rootDir)) {
@@ -81,13 +83,12 @@ export const compilePdfs = async (options: CompileOptions) => {
         )
       }
 
-      const lang = filename2prism(filepath)[0]
+      const lang = filename2shiki.findOne(sortedLanguages, filepath)
       const code = await fs.readFile(filepath, 'utf8')
 
       let pdfDocument: PDFDocument
       try {
         pdfDocument = await stringToPdf(code, {
-          // @ts-expect-error These should be compatible for the most part
           lang,
           ...normalizedOptions,
         })

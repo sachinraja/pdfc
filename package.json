@@ -47,7 +47,7 @@
   "dependencies": {
     "clipanion": "^3.2.0-rc.3",
     "colorette": "^2.0.16",
-    "filename2prism": "^3.0.0",
+    "filename2shiki": "^1.0.1",
     "globby": "^12.0.2",
     "is-path-inside": "^4.0.0",
     "pdf-lib": "^1.17.0",
