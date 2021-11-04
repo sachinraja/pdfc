@@ -73,8 +73,6 @@ export const compilePdfs = async (options: CompileOptions) => {
     ignore: normalizedOptions.exclude,
   })
 
-  const sortedLanguages = filename2shiki.getSortedLanguages()
-
   await Promise.all(
     filepaths.map(async (filepath) => {
       if (!isPathInside(filepath, normalizedOptions.rootDir)) {
@@ -83,7 +81,9 @@ export const compilePdfs = async (options: CompileOptions) => {
         )
       }
 
-      const lang = filename2shiki.findOne(sortedLanguages, filepath)
+      const filename = path.basename(filepath)
+      const lang = filename2shiki.findOne(filename)
+
       const code = await fs.readFile(filepath, 'utf8')
 
       let pdfDocument: PDFDocument
