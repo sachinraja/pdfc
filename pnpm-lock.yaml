@@ -24,7 +24,7 @@ specifiers:
   shiki: ^0.9.12
   shiki-renderer-pdf: ^1.1.2
   ts-node: 10.4.0
-  tsup: 5.6.0
+  tsup: 5.7.0
   typescript: 4.4.4
   xo: 0.46.4
 
@@ -54,7 +54,7 @@ devDependencies:
   rimraf: 3.0.2
   semantic-release: 18.0.0
   ts-node: 10.4.0_791c00ee3b87247e144187b4857f8ed5
-  tsup: 5.6.0_ts-node@10.4.0+typescript@4.4.4
+  tsup: 5.7.0_ts-node@10.4.0+typescript@4.4.4
   typescript: 4.4.4
   xo: 0.46.4
 
@@ -6214,8 +6214,8 @@ packages:
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
-  /tsup/5.6.0_ts-node@10.4.0+typescript@4.4.4:
-    resolution: {integrity: sha512-W4ylYYEZeIcAO2YIhP2fA5vg8dOGhgAbTJJCR5fMlPtDjxflLfbI/LUyix/sYy/5uNch6h12RNMzw8vISzppZg==}
+  /tsup/5.7.0_ts-node@10.4.0+typescript@4.4.4:
+    resolution: {integrity: sha512-Rt83NU4t3e0I2WyubR3doAAl/aijzNYVgWB8cZxem/6MfoutrOFssm6L8eMVIGvPPOYsDDVcAvXLwn+CUgeRAQ==}
     hasBin: true
     peerDependencies:
       typescript: ^4.2.3
