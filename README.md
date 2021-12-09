@@ -1,22 +1,22 @@
 # pdfc
 
-PDF "compiler" for your source code
+PDF compiler for your source code
 
-Uses [`shiki`](https://github.com/shikijs/shiki) for perfect syntax highlighting and [`shiki-renderer-pdf`](https://github.com/sachinraja/shiki-renderer-pdf) to create the PDFs.
+Uses [`Shiki`](https://github.com/shikijs/shiki) for perfect syntax highlighting and [`shiki-renderer-pdf`](https://github.com/sachinraja/shiki-renderer-pdf) to create the PDFs.
 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-# Installation
+## Installation
 
 ```shell
 npm install pdfc
 ```
 
-# Usage
+## Usage
 
-Most uses are through the cli, but there is a programatic api.
+Most uses are through the CLI, but there is a programatic API.
 
-## Cli
+### CLI
 
 To compile all files in a directory to PDFs you can use this:
 
@@ -56,14 +56,14 @@ If none if specified, it will default to `light-plus`. See [shiki docs](https://
 
 Run `pdfc --help` for more on what you can do.
 
-## API
+### API
 
 Please note that this package is pure ESM, see [this](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) for more details.
 
 Compile PDFs, this will also write files to `pdfs` by default:
 
 ```js
-import { compilePdfs } from '../src'
+import { compilePdfs } from 'pdfc'
 ;(async () => {
   await compilePdfs({
     rootDir: 'src',
@@ -77,7 +77,7 @@ Compile string to a `PDFDocument` instance:
 
 ```js
 import fs from 'node:fs/promises'
-import { stringToPdf } from '../src'
+import { stringToPdf } from 'pdfc'
 ;(async () => {
   const code = 'console.log("Hello World")'
 

@@ -1,7 +1,7 @@
 {
   "name": "pdfc",
   "version": "0.0.0-development",
-  "description": "PDF \"compiler\" for your source code",
+  "description": "PDF compiler for your source code",
   "author": "Sachin Raja <sachinraja2349@gmail.com>",
   "license": "MIT",
   "repository": {
