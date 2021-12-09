@@ -8,7 +8,7 @@ Uses [`Shiki`](https://github.com/shikijs/shiki) for perfect syntax highlighting
 
 ## Installation
 
-```shell
+```sh
 npm install pdfc
 ```
 
@@ -20,7 +20,7 @@ Most uses are through the CLI, but there is a programatic API.
 
 To compile all files in a directory to PDFs you can use this:
 
-```shell
+```sh
 pdfc src
 ```
 
@@ -28,19 +28,19 @@ pdfc src
 
 Output is placed in the `pdfs` directory by default. To change the output directory you can use the `-d` or `--out-dir` flag:
 
-```shell
+```sh
 pdfc src -d pdf-build
 ```
 
 This will compile all files in `src` by default. If you want to restrict to a subset of files you can use the `--include` flag:
 
-```shell
+```sh
 pdfc src --include "src/**/*.js"
 ```
 
 This will compile only the js files in `src`. The same can be done with the `--exclude` flag:
 
-```shell
+```sh
 pdfc src --exclude "node_modules" --exclude "src/**/*.test.js"
 ```
 
@@ -48,7 +48,7 @@ This will exclude all test files from compilation. Note that `node_modules` shou
 
 You can also specify a theme to use with the `-t` or `--theme` flag:
 
-```shell
+```sh
 pdfc src -t github-light
 ```
 
