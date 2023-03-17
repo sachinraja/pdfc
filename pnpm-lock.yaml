@@ -21,7 +21,7 @@ specifiers:
   prettier: 2.4.1
   rimraf: 3.0.2
   semantic-release: 18.0.0
-  shiki: ^0.11.0
+  shiki: ^0.14.0
   shiki-renderer-pdf: ^1.1.2
   ts-node: 10.4.0
   tsup: 5.7.4
@@ -35,8 +35,8 @@ dependencies:
   globby: 13.1.1
   is-path-inside: 4.0.0
   pdf-lib: 1.17.0
-  shiki: 0.11.0
-  shiki-renderer-pdf: 1.1.2_pdf-lib@1.17.0+shiki@0.11.0
+  shiki: 0.14.1
+  shiki-renderer-pdf: 1.1.2_pdf-lib@1.17.0+shiki@0.14.1
 
 devDependencies:
   '@swc/core': 1.2.111
@@ -1398,6 +1398,10 @@ packages:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
     dev: true
+
+  /ansi-sequence-parser/1.1.0:
+    resolution: {integrity: sha512-lEm8mt52to2fT8GhciPCGeCXACSz2UwIN4X2e2LJSnZ5uAbn2/dsYdOmUXq0AtWS5cpAupysIneExOgH0Vd2TQ==}
+    dev: false
 
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -4377,8 +4381,8 @@ packages:
       minimist: 1.2.5
     dev: true
 
-  /jsonc-parser/3.0.0:
-    resolution: {integrity: sha512-fQzRfAbIBnR0IQvftw9FJveWiHp72Fg20giDrHz6TdfB12UH/uue0D3hm57UB5KgAVuniLMCaS8P1IMj9NR7cA==}
+  /jsonc-parser/3.2.0:
+    resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: false
 
   /jsonfile/6.1.0:
@@ -5731,7 +5735,7 @@ packages:
     resolution: {integrity: sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==}
     dev: true
 
-  /shiki-renderer-pdf/1.1.2_pdf-lib@1.17.0+shiki@0.11.0:
+  /shiki-renderer-pdf/1.1.2_pdf-lib@1.17.0+shiki@0.14.1:
     resolution: {integrity: sha512-nnHTyqE1sbH403TVEabx3Z71xgspiTaiv4PFuT2+JsYiCufdEOZe7Q2eLARvAmgHlZjcxLtKo2RqV+XknTFHCw==}
     peerDependencies:
       pdf-lib: '1'
@@ -5739,15 +5743,16 @@ packages:
     dependencies:
       hex-rgb: 4.3.0
       pdf-lib: 1.17.0
-      shiki: 0.11.0
+      shiki: 0.14.1
     dev: false
 
-  /shiki/0.11.0:
-    resolution: {integrity: sha512-ZM5xcTzsURBxNcqTcB5Z2EpgyWGiHpcXewrq8FDftca9w5jKw5rS5BMo76h1UpYVQOQ6PYssIPpSYv+zf7wVYg==}
+  /shiki/0.14.1:
+    resolution: {integrity: sha512-+Jz4nBkCBe0mEDqo1eKRcCdjRtrCjozmcbTUjbPTX7OOJfEbTZzlUWlZtGe3Gb5oV1/jnojhG//YZc3rs9zSEw==}
     dependencies:
-      jsonc-parser: 3.0.0
-      vscode-oniguruma: 1.6.1
-      vscode-textmate: 6.0.0
+      ansi-sequence-parser: 1.1.0
+      jsonc-parser: 3.2.0
+      vscode-oniguruma: 1.7.0
+      vscode-textmate: 8.0.0
     dev: false
 
   /side-channel/1.0.4:
@@ -6424,12 +6429,12 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vscode-oniguruma/1.6.1:
-    resolution: {integrity: sha512-vc4WhSIaVpgJ0jJIejjYxPvURJavX6QG41vu0mGhqywMkQqulezEqEQ3cO3gc8GvcOpX6ycmKGqRoROEMBNXTQ==}
+  /vscode-oniguruma/1.7.0:
+    resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==}
     dev: false
 
-  /vscode-textmate/6.0.0:
-    resolution: {integrity: sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ==}
+  /vscode-textmate/8.0.0:
+    resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
     dev: false
 
   /w3c-hr-time/1.0.2:
