@@ -52,7 +52,7 @@
     "globby": "^13.0.0",
     "is-path-inside": "^4.0.0",
     "pdf-lib": "^1.17.0",
-    "shiki": "^0.14.0",
+    "shiki": "^1.0.0",
     "shiki-renderer-pdf": "^1.1.2"
   },
   "devDependencies": {
